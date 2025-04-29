@@ -21,9 +21,9 @@ public class RideDto {
 
     private Long id;
 
-    private Point pickupLocation;
+    private PointDto pickupLocation;
 
-    private Point dropOffLocation;
+    private PointDto dropOffLocation;
 
     private LocalDateTime createdTime;
 
@@ -34,6 +34,8 @@ public class RideDto {
     private PaymentMethod paymentMethod;
 
     private RideStatus rideStatus;
+
+    private String otp;
 
     private Double fare;
 

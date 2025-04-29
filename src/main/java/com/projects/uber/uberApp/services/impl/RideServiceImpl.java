@@ -5,13 +5,17 @@ import com.projects.uber.uberApp.dto.RideRequestDto;
 import com.projects.uber.uberApp.entities.Ride;
 import com.projects.uber.uberApp.entities.enums.RideStatus;
 import com.projects.uber.uberApp.services.RideService;
+import lombok.RequiredArgsConstructor;
+import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 
 @Service
+@RequiredArgsConstructor
 public class RideServiceImpl implements RideService {
+
     @Override
     public Ride getRideById(Long rideId) {
         return null;

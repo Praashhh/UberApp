@@ -23,6 +23,8 @@ public class Driver {
 
     private Boolean available;
 
+    private String vehicleId;
+
     @Column(columnDefinition = "Geometry(Point, 4326)") //defines the column geometry to earth.
     Point currentLocation;
 
